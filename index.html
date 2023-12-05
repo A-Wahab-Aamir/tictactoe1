@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>TIC TAC TOE GAME</h1>
+        <table>
+            <tr>
+                <td id="td_1" onclick="f1()"></td>
+                <td id="td_2" onclick="f2()"></td>
+                <td id="td_3" onclick="f3()"></td>
+            </tr>
+            <tr>
+                <td id="td_4" onclick="f4()"></td>
+                <td id="td_5" onclick="f5()"></td>
+                <td id="td_6" onclick="f6()"></td>
+            </tr>
+            <tr>
+                <td id="td_7" onclick="f7()"></td>
+                <td id="td_8" onclick="f8()"></td>
+                <td id="td_9" onclick="f9()"></td>
+            </tr>
+        </table>
+
+        <p>Player <span id="text">1</span></p>
+    </center>
+
+    <script>
+        function Win() {
+            var a = document.getElementById('td_1').innerHTML;
+            var b = document.getElementById('td_2').innerHTML;
+            var c = document.getElementById('td_3').innerHTML;
+
+            var d = document.getElementById('td_4').innerHTML;
+            var e = document.getElementById('td_5').innerHTML;
+            var f = document.getElementById('td_6').innerHTML;
+
+            var g = document.getElementById('td_7').innerHTML;
+            var h = document.getElementById('td_8').innerHTML;
+            var i = document.getElementById('td_9').innerHTML;
+
+            if (a == "X" && b == "X" && c == "X") {
+                alert("Player 1 Won! ")
+                document.getElementById('td_1').style.backgroundColor = "black";
+                document.getElementById('td_2').style.backgroundColor = "black";
+                document.getElementById('td_3').style.backgroundColor = "black";
+            } else if (a == "O" && b == "O" && c == "O") {
+                alert("Player 2 Won! ")
+                document.getElementById('td_1').style.textDecoration = 'line-through';
+                document.getElementById('td_2').style.textDecoration = 'line-through';
+                document.getElementById('td_3').style.textDecoration = 'line-through';
+            }
+        }
+
+        function f1() {
+            var td = document.getElementById('td_1');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+            Win()
+        }
+
+        function f2() {
+            var td = document.getElementById('td_2');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+            Win()
+
+        }
+
+        function f3() {
+            var td = document.getElementById('td_3');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+            Win()
+
+        }
+
+        function f4() {
+            var td = document.getElementById('td_4');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+
+        }
+
+        function f5() {
+            var td = document.getElementById('td_5');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+
+        }
+
+        function f6() {
+            var td = document.getElementById('td_6');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+
+        }
+
+        function f7() {
+            var td = document.getElementById('td_7');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+
+        }
+
+        function f8() {
+            var td = document.getElementById('td_8');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+
+        }
+
+        function f9() {
+            var td = document.getElementById('td_9');
+            var text = document.getElementById('text');
+            if (td.innerHTML == "") {
+                if (text.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    text.innerHTML = "2";
+                } else {
+                    td.innerHTML = "O";
+                    text.innerHTML = "1";
+                }
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
