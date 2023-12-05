@@ -1,9 +1,9 @@
-table tr td{
+table tr td {
     width: 100px;
     height: 100px;
-   background-color: orangered;
-   font-size: 40px;
-   color: white;
-   font-weight: bold;
-   text-align: center;
+    background-color: rgb(255, 0, 0);
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
